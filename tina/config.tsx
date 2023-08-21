@@ -60,8 +60,8 @@ const config = defineConfig({
           },
           {
             type: "rich-text",
-            label: "Excerpt",
-            name: "excerpt",
+            label: "Summary",
+            name: "summary",
           },
           {
             type: "reference",
@@ -71,12 +71,27 @@ const config = defineConfig({
           },
           {
             type: "datetime",
-            label: "Posted Date",
-            name: "date",
+            label: "Start Date",
+            name: "start",
             ui: {
               dateFormat: "MMMM DD YYYY",
               timeFormat: "hh:mm A",
             },
+          },
+          {
+            type: "datetime",
+            label: "End Date",
+            name: "finish",
+            ui: {
+              dateFormat: "MMMM DD YYYY",
+              timeFormat: "hh:mm A",
+            },
+          },
+          {
+            name: "category",
+            label: "Category",
+            type: "string",
+            options: ["Art", "Education", "Accessibility"],
           },
           {
             type: "rich-text",
