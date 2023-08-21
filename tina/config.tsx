@@ -5,6 +5,7 @@ import { heroBlockSchema } from "../components/blocks/hero";
 import { testimonialBlockSchema } from "../components/blocks/testimonial";
 import { galleryBlockSchema } from "../components/blocks/gallery";
 import { videoBlockSchema } from "../components/blocks/video";
+import { eventBlockSchema } from "../components/blocks/events";
 import { ColorPickerInput } from "./fields/color";
 import { iconSchema } from "../components/util/icon";
 
@@ -365,6 +366,8 @@ const config = defineConfig({
               testimonialBlockSchema,
               galleryBlockSchema,
               videoBlockSchema,
+              eventBlockSchema,
+
             ],
           },
         ],
