@@ -23,34 +23,11 @@ import { PostType } from "../../pages/posts/[filename]";
 import { tinaField } from "tinacms/dist/react";
 
 const components: Components<{
-  BlockQuote: {
-    children: TinaMarkdownContent;
-    authorName: string;
-  };
   DateTime: {
     format?: string;
   };
-  NewsletterSignup: {
-    placeholder: string;
-    buttonText: string;
-    children: TinaMarkdownContent;
-    disclaimer?: TinaMarkdownContent;
-  };
 }> = {
   code_block: (props) => <Prism {...props} />,
-  BlockQuote: (props: {
-    children: TinaMarkdownContent;
-    authorName: string;
-  }) => {
-    return (
-      <div>
-        <blockquote>
-          <TinaMarkdown content={props.children} />
-          {props.authorName}
-        </blockquote>
-      </div>
-    );
-  },
   DateTime: (props) => {
     const dt = React.useMemo(() => {
       return new Date();
@@ -66,44 +43,6 @@ const components: Components<{
       default:
         return <span>{format(dt, "P")}</span>;
     }
-  },
-  NewsletterSignup: (props) => {
-    return (
-      <div className="bg-white">
-        <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
-          <div className="">
-            <TinaMarkdown content={props.children} />
-          </div>
-          <div className="mt-8 ">
-            <form className="sm:flex">
-              <label htmlFor="email-address" className="sr-only">
-                Email address
-              </label>
-              <input
-                id="email-address"
-                name="email-address"
-                type="email"
-                autoComplete="email"
-                required
-                className="w-full px-5 py-3 border border-gray-300 shadow-sm placeholder-gray-400 focus:ring-1 focus:ring-teal-500 focus:border-teal-500 sm:max-w-xs rounded-md"
-                placeholder={props.placeholder}
-              />
-              <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                <button
-                  type="submit"
-                  className="w-full flex items-center justify-center py-3 px-5 border border-transparent text-base font-medium rounded-md text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
-                >
-                  {props.buttonText}
-                </button>
-              </div>
-            </form>
-            <div className="mt-3 text-sm text-gray-500">
-              {props.disclaimer && <TinaMarkdown content={props.disclaimer} />}
-            </div>
-          </div>
-        </div>
-      </div>
-    );
   },
   img: (props) => (
     <span className="flex items-center justify-center">
@@ -128,10 +67,16 @@ export const Post = (props: PostType) => {
       "from-yellow-400 to-yellow-500 dark:from-yellow-300 dark:to-yellow-500",
   };
 
-  const date = new Date(props.date);
-  let formattedDate = "";
-  if (!isNaN(date.getTime())) {
-    formattedDate = format(date, "MMM dd, yyyy");
+  const start = new Date(props.start);
+  const finish = new Date(props.finish);
+  
+  let startDate = "";
+  let endDate= "";
+  if (!isNaN(start.getTime())) {
+    startDate = format(start, "MMM dd, yyyy");
+  }
+  if (!isNaN(finish.getTime())) {
+    endDate = format(finish, "MMM dd, yyyy");
   }
 
   return (
@@ -150,24 +95,16 @@ export const Post = (props: PostType) => {
           </span>
         </h2>
         <div
-          data-tina-field={tinaField(props, "author")}
+          data-tina-field={tinaField(props, "category")}
           className="flex items-center justify-center mb-16"
         >
-          {props.author && (
+          {props.category && (
             <>
-              <div className="flex-shrink-0 mr-4">
-                <img
-                  data-tina-field={tinaField(props.author, "avatar")}
-                  className="h-14 w-14 object-cover rounded-full shadow-sm"
-                  src={props.author.avatar}
-                  alt={props.author.name}
-                />
-              </div>
               <p
-                data-tina-field={tinaField(props.author, "name")}
+                data-tina-field={tinaField(props.category, "category")}
                 className="text-base font-medium text-gray-600 group-hover:text-gray-800 dark:text-gray-200 dark:group-hover:text-white"
               >
-                {props.author.name}
+                {props.category}
               </p>
               <span className="font-bold text-gray-200 dark:text-gray-500 mx-2">
                 —
@@ -175,10 +112,16 @@ export const Post = (props: PostType) => {
             </>
           )}
           <p
-            data-tina-field={tinaField(props, "date")}
+            data-tina-field={tinaField(props, "start")}
             className="text-base text-gray-400 group-hover:text-gray-500 dark:text-gray-300 dark:group-hover:text-gray-150"
           >
-            {formattedDate}
+            {startDate}
+          </p>
+          <p
+            data-tina-field={tinaField(props, "finish")}
+            className="text-base text-gray-400 group-hover:text-gray-500 dark:text-gray-300 dark:group-hover:text-gray-150"
+          >
+            {endDate}
           </p>
         </div>
       </Container>

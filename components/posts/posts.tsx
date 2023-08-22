@@ -23,10 +23,15 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
     <>
       {data.map((postData) => {
         const post = postData.node;
-        const date = new Date(post.date);
-        let formattedDate = "";
-        if (!isNaN(date.getTime())) {
-          formattedDate = format(date, "MMM dd, yyyy");
+        const start = new Date(post.start);
+        const finish = new Date(post.finish);
+        let startDate = "";
+        let endDate= "";
+        if (!isNaN(start.getTime())) {
+          startDate = format(start, "MMM dd, yyyy");
+        }
+        if (!isNaN(finish.getTime())) {
+          endDate = format(finish, "MMM dd, yyyy");
         }
         return (
           <Link
@@ -45,26 +50,28 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
               </span>
             </h3>
             <div className="prose dark:prose-dark w-full max-w-none mb-5 opacity-70">
-              <TinaMarkdown content={post.excerpt} />
+              <TinaMarkdown content={post.summary} />
             </div>
             <div className="flex items-center">
               <div className="flex-shrink-0 mr-2">
-                <img
-                  className="h-10 w-10 object-cover rounded-full shadow-sm"
-                  src={post?.author?.avatar}
-                  alt={post?.author?.name}
-                />
               </div>
-              <p className="text-base font-medium text-gray-600 group-hover:text-gray-800 dark:text-gray-200 dark:group-hover:text-white">
-                {post?.author?.name}
-              </p>
-              {formattedDate !== "" && (
+              {startDate !== "" && (
                 <>
                   <span className="font-bold text-gray-200 dark:text-gray-500 mx-2">
                     —
                   </span>
                   <p className="text-base text-gray-400 group-hover:text-gray-500 dark:text-gray-300 dark:group-hover:text-gray-150">
-                    {formattedDate}
+                    {startDate}
+                  </p>
+                </>
+              )}
+              {endDate !== "" && (
+                <>
+                  <span className="font-bold text-gray-200 dark:text-gray-500 mx-2">
+                    —
+                  </span>
+                  <p className="text-base text-gray-400 group-hover:text-gray-500 dark:text-gray-300 dark:group-hover:text-gray-150">
+                    {endDate}
                   </p>
                 </>
               )}

@@ -97,69 +97,6 @@ const config = defineConfig({
             type: "rich-text",
             label: "Body",
             name: "_body",
-            templates: [
-              {
-                name: "DateTime",
-                label: "Date & Time",
-                inline: true,
-                fields: [
-                  {
-                    name: "format",
-                    label: "Format",
-                    type: "string",
-                    options: ["utc", "iso", "local"],
-                  },
-                ],
-              },
-              {
-                name: "BlockQuote",
-                label: "Block Quote",
-                fields: [
-                  {
-                    name: "children",
-                    label: "Quote",
-                    type: "rich-text",
-                  },
-                  {
-                    name: "authorName",
-                    label: "Author",
-                    type: "string",
-                  },
-                ],
-              },
-              {
-                name: "NewsletterSignup",
-                label: "Newsletter Sign Up",
-                fields: [
-                  {
-                    name: "children",
-                    label: "CTA",
-                    type: "rich-text",
-                  },
-                  {
-                    name: "placeholder",
-                    label: "Placeholder",
-                    type: "string",
-                  },
-                  {
-                    name: "buttonText",
-                    label: "Button Text",
-                    type: "string",
-                  },
-                  {
-                    name: "disclaimer",
-                    label: "Disclaimer",
-                    type: "rich-text",
-                  },
-                ],
-                ui: {
-                  defaultItem: {
-                    placeholder: "Enter your email",
-                    buttonText: "Notify Me",
-                  },
-                },
-              },
-            ],
             isBody: true,
           },
         ],

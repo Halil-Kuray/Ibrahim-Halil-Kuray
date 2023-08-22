@@ -5,8 +5,10 @@ query pageQuery {
       node {
         id
         date
+        start
+        finish
         title
-        excerpt
+        summary
         author {
           ... on Author {
             ...AuthorParts
