@@ -4,7 +4,6 @@ query pageQuery {
     edges {
       node {
         id
-        date
         start
         finish
         title

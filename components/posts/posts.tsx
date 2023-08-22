@@ -53,8 +53,16 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
               <TinaMarkdown content={post.summary} />
             </div>
             <div className="flex items-center">
-              <div className="flex-shrink-0 mr-2">
+            <div className="flex-shrink-0 mr-2">
+                <img
+                  className="h-10 w-10 object-cover rounded-full shadow-sm"
+                  src={post?.author?.avatar}
+                  alt={post?.author?.name}
+                />
               </div>
+              <p className="text-base font-medium text-gray-600 group-hover:text-gray-800 dark:text-gray-200 dark:group-hover:text-white">
+                {post?.author?.name}
+              </p>
               {startDate !== "" && (
                 <>
                   <span className="font-bold text-gray-200 dark:text-gray-500 mx-2">
