@@ -161,7 +161,7 @@ export const Post = (props: PostType) => {
           {props.category && (
             <>
               <p
-                data-tina-field={tinaField(props.category, "category")}
+                data-tina-field={tinaField(props, "category")}
                 className="text-base font-medium text-gray-600 group-hover:text-gray-800 dark:text-gray-200 dark:group-hover:text-white"
               >
                 {props.category}
