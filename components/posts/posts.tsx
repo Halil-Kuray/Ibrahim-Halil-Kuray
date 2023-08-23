@@ -23,15 +23,11 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
     <>
       {data.map((postData) => {
         const post = postData.node;
-        const start = new Date(post.start);
-        const finish = new Date(post.finish);
-        let startDate = "";
+        const date = new Date(post.start);
+        let formattedDate = "";
         let endDate= "";
-        if (!isNaN(start.getTime())) {
-          startDate = format(start, "MMM dd, yyyy");
-        }
-        if (!isNaN(finish.getTime())) {
-          endDate = format(finish, "MMM dd, yyyy");
+        if (!isNaN(date.getTime())) {
+          formattedDate = format(date, "MMM - dd - yyyy");
         }
         return (
           <Link
@@ -59,27 +55,19 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
                   src={post?.author?.avatar}
                   alt={post?.author?.name}
                 />
-              </div>
+            </div>
+
               <p className="text-base font-medium text-gray-600 group-hover:text-gray-800 dark:text-gray-200 dark:group-hover:text-white">
                 {post?.author?.name}
               </p>
-              {startDate !== "" && (
+
+              {formattedDate !== "" && (
                 <>
                   <span className="font-bold text-gray-200 dark:text-gray-500 mx-2">
                     /
                   </span>
                   <p className="text-base text-gray-400 group-hover:text-gray-500 dark:text-gray-300 dark:group-hover:text-gray-150">
-                    {startDate}
-                  </p>
-                </>
-              )}
-              {endDate !== "" && (
-                <>
-                  <span className="font-bold text-gray-200 dark:text-gray-500 mx-2">
-                    —
-                  </span>
-                  <p className="text-base text-gray-400 group-hover:text-gray-500 dark:text-gray-300 dark:group-hover:text-gray-150">
-                    {endDate}
+                    {formattedDate}
                   </p>
                 </>
               )}
