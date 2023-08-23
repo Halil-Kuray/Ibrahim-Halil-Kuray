@@ -61,6 +61,10 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
                 {post?.author?.name}
               </p>
 
+              <p className="text-base font-medium text-gray-600 group-hover:text-gray-800 dark:text-gray-200 dark:group-hover:text-white">
+                {post?.category}
+              </p>
+
               {formattedDate !== "" && (
                 <>
                   <span className="font-bold text-gray-200 dark:text-gray-500 mx-2">
