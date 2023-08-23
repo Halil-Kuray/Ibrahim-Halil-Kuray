@@ -71,17 +71,8 @@ const config = defineConfig({
           },
           {
             type: "datetime",
-            label: "Start Date",
-            name: "start",
-            ui: {
-              dateFormat: "MMMM DD YYYY",
-              timeFormat: "hh:mm A",
-            },
-          },
-          {
-            type: "datetime",
-            label: "End Date",
-            name: "finish",
+            label: "Post Date",
+            name: "date",
             ui: {
               dateFormat: "MMMM DD YYYY",
               timeFormat: "hh:mm A",
@@ -91,7 +82,7 @@ const config = defineConfig({
             name: "category",
             label: "Category",
             type: "string",
-            options: ["Art", "Education", "Accessibility", "Partner"],
+            options: ["HTML 5", "CSS 3", "Java Script", "Tailwind" ,"SASS", "Bootstrap", "Figma", "Node JS", "Express JS", "Mongo DB", "REST API", "EJS", "JSX", "React", "Redux", "Git", "GitHub", "Scrum", "Agile", "Python", "Solidity", "Docker", "Tina CMS"],
           },
           {
             type: "rich-text",
