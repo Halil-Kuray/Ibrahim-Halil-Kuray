@@ -1,6 +1,14 @@
 ---
 title: Tina Cloud Starter
 blocks:
+  - items:
+      - image:
+          src: /blocks/features.png
+          alt: Alt Text
+      - image:
+          src: /blocks/features.png
+          alt: Alt Text
+    _template: events
   - headline: Welcome to the Tina Starter
     text: >
       This project is set up to show you the basics of working with Tina. You're
@@ -56,6 +64,7 @@ blocks:
     color: primary
     _template: testimonial
 ---
+
 
 
 

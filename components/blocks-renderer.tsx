@@ -1,6 +1,7 @@
 import type { Page, PageBlocks } from "../tina/__generated__/types";
 import { Content } from "./blocks/content";
 import { Features } from "./blocks/features";
+import { Events } from "./blocks/events";
 import { Hero } from "./blocks/hero";
 import { Testimonial } from "./blocks/testimonial";
 import { Gallery } from "./blocks/gallery";
@@ -40,6 +41,8 @@ const Block = (block: PageBlocks) => {
       return <Video data={block} />;
     case "PageBlocksNav":
       return <Nav data={block} />;
+    case "PageBlocksEvents":
+      return <Events data={block} />;
     default:
       return null;
   }

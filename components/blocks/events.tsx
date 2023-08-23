@@ -70,7 +70,7 @@ export const eventBlockSchema: Template = {
     name: 'events',
     label: 'Events',
     ui: {
-      previewSrc: '/blocks/gallery.png',
+      previewSrc: '/blocks/events.png',
       defaultItem: {
         items: [defaultEvent, defaultEvent],
       },
