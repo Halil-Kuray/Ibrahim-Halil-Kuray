@@ -4,10 +4,10 @@ query pageQuery {
     edges {
       node {
         id
-        start
-        finish
         title
         summary
+        date
+        category
         author {
           ... on Author {
             ...AuthorParts
