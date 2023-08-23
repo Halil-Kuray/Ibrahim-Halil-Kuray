@@ -137,10 +137,6 @@ export const Post = (props: PostType) => {
   return (
     <Section className="flex-1">
 
-
-
-
-
       <Container width="small" className={`flex-1 pb-2`} size="large">
         <h2
           data-tina-field={tinaField(props, "title")}
@@ -181,10 +177,6 @@ export const Post = (props: PostType) => {
         </div>
       </Container>
 
-
-
-
-
       {props.heroImg && (
         <div className="px-4 w-full">
           <div
@@ -205,9 +197,6 @@ export const Post = (props: PostType) => {
         </div>
       )}
 
-
-
-
       <Container className={`flex-1 pt-4`} width="small" size="large">
         <div
           data-tina-field={tinaField(props, "_body")}
@@ -216,9 +205,6 @@ export const Post = (props: PostType) => {
           <TinaMarkdown components={components} content={props._body} />
         </div>
       </Container>
-
-
-
 
     </Section>
   );
