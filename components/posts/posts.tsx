@@ -5,6 +5,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { useTheme } from "../layout";
 import format from "date-fns/format";
 import { PostsType } from "../../pages/posts";
+import { Container } from "../util/container"; 
 
 export const Posts = ({ data }: { data: PostsType[] }) => {
   const theme = useTheme();
@@ -19,10 +20,16 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
     yellow: "group-hover:text-yellow-500 dark:group-hover:text-yellow-300",
   };
 
+  // If categories update in config.tsx / blogpost / categories req update!!
+  const categories =  ["HTML 5", "CSS 3", "Java Script", "Tailwind" ,"SASS", "Bootstrap", "Figma", "Node JS", "Express JS", "Mongo DB", "REST API", "EJS", "JSX", "React", "Redux", "Git", "GitHub", "Scrum", "Agile", "Python", "Solidity", "Docker", "Tina CMS"]
+
+
+  let filteredData = data.filter((postData) => (postData.node.category == "HTML 5"))
+
   return (
-    <>
-      {data.map((postData) => {
-        
+    <Container>
+      {filteredData.map((postData) => {
+
         const post = postData.node;
         const date = new Date(post.date);
         let formattedDate = "";
@@ -80,6 +87,6 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
           </Link>
         );
       })}
-    </>
+    </Container>
   );
 };
