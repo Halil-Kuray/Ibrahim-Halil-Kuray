@@ -23,7 +23,7 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
     <>
       {data.map((postData) => {
         const post = postData.node;
-        const date = new Date(post.start);
+        const date = new Date(post.date);
         let formattedDate = "";
         let endDate= "";
         if (!isNaN(date.getTime())) {
