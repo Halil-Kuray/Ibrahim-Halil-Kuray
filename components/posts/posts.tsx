@@ -22,10 +22,11 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
   return (
     <>
       {data.map((postData) => {
+        
         const post = postData.node;
         const date = new Date(post.date);
         let formattedDate = "";
-        let endDate= "";
+
         if (!isNaN(date.getTime())) {
           formattedDate = format(date, "MMM - dd - yyyy");
         }
