@@ -93,7 +93,7 @@ export const Header = ({ data }: { data: GlobalHeader }) => {
 
           <button
             onClick={handleMenuToggle}
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden"
             aria-controls="navbar-default"
             aria-expanded={isMenuOpen}
           >
