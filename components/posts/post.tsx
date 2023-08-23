@@ -127,20 +127,20 @@ export const Post = (props: PostType) => {
       "from-yellow-400 to-yellow-500 dark:from-yellow-300 dark:to-yellow-500",
   };
 
-  const start = new Date(props.start);
-  const finish = new Date(props.finish);
+  const date = new Date(props.date);
+  let formattedDate = "";
 
-  let startDate = "";
-  let endDate= "";
-  if (!isNaN(start.getTime())) {
-    startDate = format(start, "MMM dd, yyyy");
-  }
-  if (!isNaN(finish.getTime())) {
-    endDate = format(finish, "MMM dd, yyyy");
+  if (!isNaN(date.getTime())) {
+    formattedDate = format(date, "MMM - dd - yyyy");
   }
 
   return (
     <Section className="flex-1">
+
+
+
+
+
       <Container width="small" className={`flex-1 pb-2`} size="large">
         <h2
           data-tina-field={tinaField(props, "title")}
@@ -171,20 +171,20 @@ export const Post = (props: PostType) => {
               </span>
             </>
           )}
+
           <p
-            data-tina-field={tinaField(props, "start")}
+            data-tina-field={tinaField(props, "date")}
             className="text-base text-gray-400 group-hover:text-gray-500 dark:text-gray-300 dark:group-hover:text-gray-150"
           >
-            {startDate}
-          </p>
-          <p
-            data-tina-field={tinaField(props, "finish")}
-            className="text-base text-gray-400 group-hover:text-gray-500 dark:text-gray-300 dark:group-hover:text-gray-150"
-          >
-            {endDate}
+            {formattedDate}
           </p>
         </div>
       </Container>
+
+
+
+
+
       {props.heroImg && (
         <div className="px-4 w-full">
           <div
@@ -204,6 +204,10 @@ export const Post = (props: PostType) => {
           </div>
         </div>
       )}
+
+
+
+
       <Container className={`flex-1 pt-4`} width="small" size="large">
         <div
           data-tina-field={tinaField(props, "_body")}
@@ -212,6 +216,10 @@ export const Post = (props: PostType) => {
           <TinaMarkdown components={components} content={props._body} />
         </div>
       </Container>
+
+
+
+
     </Section>
   );
 };
