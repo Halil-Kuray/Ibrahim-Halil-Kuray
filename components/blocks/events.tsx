@@ -4,9 +4,19 @@ import { Container } from '../util/container';
 import { Section } from '../util/section';
 import { TinaMarkdown } from 'tinacms/dist/rich-text';
 import type { Template } from "tinacms";
+import format from "date-fns/format";
 import React from 'react';
 
+
+
 export const Event = ({ eventColor, data }: { eventColor: string; data: PageBlocksEventsItems }) => {
+
+  let formattedDate  = "";
+  if (data.date){
+    const date = new Date(data.date);
+    formattedDate =format(date, "dd - MMM - yyyy"); 
+  }
+
   return (
       <div
         data-tina-field={tinaField(data)}
@@ -31,6 +41,18 @@ export const Event = ({ eventColor, data }: { eventColor: string; data: PageBloc
             />
           </div>
         )}
+
+        {data.date && (
+           <div
+           data-tina-field={tinaField(data, 'date')}
+           className="relative row-start-1 md:col-span-2 flex justify-center"
+         >
+
+          {formattedDate}
+           
+         </div>
+        )}
+        
         {data.body && (
           <div
             data-tina-field={tinaField(data.body, 'body')}
@@ -92,6 +114,15 @@ export const eventBlockSchema: Template = {
           },
         },
         fields: [
+          {
+            type: "datetime",
+            label: "Event Date",
+            name: "date",
+            ui: {
+              dateFormat: "MMMM DD YYYY",
+              timeFormat: "hh:mm A",
+            },
+          },
           {
             type: 'object',
             label: 'Image',
