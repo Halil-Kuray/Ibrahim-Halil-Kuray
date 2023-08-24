@@ -44,8 +44,8 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
     <Container>
       <Section>
 
-        <label htmlFor="filter" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-          Select an option
+        <label htmlFor="filter" className="block mb-2 text-sm font-medium">
+          Filter a categorie
         </label>
 
         <select 
