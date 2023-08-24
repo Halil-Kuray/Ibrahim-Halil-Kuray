@@ -21,9 +21,8 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
     yellow: "group-hover:text-yellow-500 dark:group-hover:text-yellow-300",
   };
 
-  // If categories update in config.tsx / blogpost / categories req update!!
-  const categories =  ["", "HTML 5", "CSS 3", "Java Script", "Tailwind" ,"SASS", "Bootstrap", "Figma", "Node JS", "Express JS", "Mongo DB", "REST API", "EJS", "JSX", "React", "Redux", "Git", "GitHub", "Scrum", "Agile", "Python", "Solidity", "Docker", "Tina CMS"]
-
+  let categories =  ["Select A Categorie"]
+  data.map((postData)=> categories.push(postData.node.category))
 
   let filteredData = data.filter((postData) => (postData.node.category == "HTML 5"))
 
@@ -34,16 +33,17 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
         <label htmlFor="countries" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
 
         <select id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-          {categories.map((categorie) => {
+          {categories.map((categorie, index) => {
               return (
-                <option value={categorie}>{categorie}</option>
+                <option value={categorie} key={index} >{categorie}</option>
               )
           })}
         </select>
 
       </Section>
 
-      {filteredData.map((postData) => {
+      <Section>
+        {filteredData.map((postData) => {
 
         const post = postData.node;
         const date = new Date(post.date);
@@ -101,7 +101,10 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
             </div>
           </Link>
         );
-      })}
+        })}
+      </Section>
+
+      
     </Container>
   );
 };
