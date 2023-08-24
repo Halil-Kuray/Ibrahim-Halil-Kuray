@@ -6,6 +6,7 @@ import { useTheme } from "../layout";
 import format from "date-fns/format";
 import { PostsType } from "../../pages/posts";
 import { Container } from "../util/container"; 
+import { Section } from "../util/section";
 
 export const Posts = ({ data }: { data: PostsType[] }) => {
   const theme = useTheme();
@@ -21,13 +22,27 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
   };
 
   // If categories update in config.tsx / blogpost / categories req update!!
-  const categories =  ["HTML 5", "CSS 3", "Java Script", "Tailwind" ,"SASS", "Bootstrap", "Figma", "Node JS", "Express JS", "Mongo DB", "REST API", "EJS", "JSX", "React", "Redux", "Git", "GitHub", "Scrum", "Agile", "Python", "Solidity", "Docker", "Tina CMS"]
+  const categories =  ["", "HTML 5", "CSS 3", "Java Script", "Tailwind" ,"SASS", "Bootstrap", "Figma", "Node JS", "Express JS", "Mongo DB", "REST API", "EJS", "JSX", "React", "Redux", "Git", "GitHub", "Scrum", "Agile", "Python", "Solidity", "Docker", "Tina CMS"]
 
 
   let filteredData = data.filter((postData) => (postData.node.category == "HTML 5"))
 
   return (
     <Container>
+      <Section>
+
+        <label htmlFor="countries" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
+
+        <select id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+          {categories.map((categorie) => {
+              return (
+                <option value={categorie}>{categorie}</option>
+              )
+          })}
+        </select>
+
+      </Section>
+
       {filteredData.map((postData) => {
 
         const post = postData.node;
