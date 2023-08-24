@@ -20,7 +20,7 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
     orange: "group-hover:text-orange-600 dark:group-hover:text-orange-300",
     yellow: "group-hover:text-yellow-500 dark:group-hover:text-yellow-300",
   };
-  
+
   let categories =  ["Select A Categorie"]
   let renderData = [];
 
@@ -76,7 +76,7 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
         let formattedDate = "";
 
         if (!isNaN(date.getTime())) {
-          formattedDate = format(date, "MMM - dd - yyyy");
+          formattedDate = format(date, "MMM-dd-yyyy");
         }
         return (
           <Link

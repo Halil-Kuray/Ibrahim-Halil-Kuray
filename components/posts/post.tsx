@@ -131,7 +131,7 @@ export const Post = (props: PostType) => {
   let formattedDate = "";
 
   if (!isNaN(date.getTime())) {
-    formattedDate = format(date, "MMM - dd - yyyy");
+    formattedDate = format(date, "MMM-dd-yyyy");
   }
 
   return (
