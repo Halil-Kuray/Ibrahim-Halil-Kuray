@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from 'react';
 import Link from "next/link";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { BsArrowRight } from "react-icons/bs";
@@ -21,18 +21,39 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
     yellow: "group-hover:text-yellow-500 dark:group-hover:text-yellow-300",
   };
 
+  const [filter, setFilter] = useState('Select A Categorie');
+
+  const handleChangeFilter = event => {
+    setFilter(event.target.value);
+  }
+
   let categories =  ["Select A Categorie"]
   data.map((postData)=> categories.push(postData.node.category))
 
-  let filteredData = data.filter((postData) => (postData.node.category == "HTML 5"))
+  let renderData = [];
+
+  if(filter == categories[0]){
+    renderData = data
+  }else {
+    renderData = data.filter((postData) => (postData.node.category == filter))
+  }
+
+  
 
   return (
     <Container>
       <Section>
 
-        <label htmlFor="countries" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
+        <label htmlFor="filter" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+          Select an option
+        </label>
 
-        <select id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <select 
+        id="countries" 
+        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        value={filter}
+        onChange={handleChangeFilter}
+        >
           {categories.map((categorie, index) => {
               return (
                 <option value={categorie} key={index} >{categorie}</option>
@@ -43,7 +64,7 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
       </Section>
 
       <Section>
-        {filteredData.map((postData) => {
+        {renderData.map((postData) => {
 
         const post = postData.node;
         const date = new Date(post.date);
