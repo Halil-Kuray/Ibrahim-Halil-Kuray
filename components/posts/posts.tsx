@@ -53,7 +53,6 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
         </label>
 
         <select 
-        id="countries" 
         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         value={filter}
         onChange={handleChangeFilter}
@@ -80,7 +79,7 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
         return (
           <Link
             key={post._sys.filename}
-            href={`/posts/` + post._sys.filename}
+            href={`/posts/${post._sys.filename}`}
             className="group block px-6 sm:px-8 md:px-10 py-10 mb-8 last:mb-0 bg-gray-50 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-1000 rounded-md shadow-sm transition-all duration-150 ease-out hover:shadow-md hover:to-gray-50 dark:hover:to-gray-800"
           >
               <h3
