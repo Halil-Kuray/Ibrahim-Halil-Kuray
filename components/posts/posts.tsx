@@ -20,6 +20,9 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
     orange: "group-hover:text-orange-600 dark:group-hover:text-orange-300",
     yellow: "group-hover:text-yellow-500 dark:group-hover:text-yellow-300",
   };
+  
+  let categories =  ["Select A Categorie"]
+  let renderData = [];
 
   const [filter, setFilter] = useState('Select A Categorie');
 
@@ -27,18 +30,20 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
     setFilter(event.target.value);
   }
 
-  let categories =  ["Select A Categorie"]
-  data.map((postData)=> categories.push(postData.node.category))
 
-  let renderData = [];
+
+  data.map((postData)=> {
+    let item =postData.node.category
+    if(categories.indexOf(item) == -1){
+      categories.push(postData.node.category)
+    }
+  })
 
   if(filter == categories[0]){
     renderData = data
   }else {
     renderData = data.filter((postData) => (postData.node.category == filter))
   }
-
-  
 
   return (
     <Container>
