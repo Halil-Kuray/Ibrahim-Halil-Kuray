@@ -55,6 +55,9 @@ export const Features = ({ data }: { data: PageBlocksFeatures }) => {
         className={`flex flex-wrap gap-x-10 gap-y-8 text-left`}
         size="large"
       >
+        {data.title && (
+          <h3>{data.title}</h3>
+        )}
         {data.items &&
           data.items.map(function (block, i) {
             return <Feature featuresColor={data.color} key={i} data={block} />;
@@ -84,6 +87,11 @@ export const featureBlockSchema = {
     },
   },
   fields: [
+    {
+      type: "string",
+      name: "title",
+      label: "Title",
+    },
     {
       type: "object",
       label: "Feature Items",
