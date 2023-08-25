@@ -5,12 +5,12 @@
       "color": "orange",
       "style": "float"
     },
-    "name": "Tina Starter",
+    "name": "Home",
     "color": "default",
     "nav": [
       {
-        "href": "",
-        "label": "Home"
+        "href": "home",
+        "label": "Activities"
       },
       {
         "href": "about",

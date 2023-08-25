@@ -20,14 +20,18 @@ blocks:
         unsplash.com/photos/75EFpyXu3Wg
     color: default
     _template: hero
-  - quote: >+
-      A profound meaning lies within snowflakes, and that is the possibility of
-      moving forward without causing harm to one another.
+  - body: >
+      > A profound meaning lies within snowflakes, and that is the possibility
+      of moving forward without causing harm to one another.\
 
-    author: ' Mevlana Jalaluddin Rumi'
+      > \
+
+      >  *Mevlana Jalaluddin Rumi*
     color: default
-    _template: testimonial
+    _template: content
 ---
+
+
 
 
 
