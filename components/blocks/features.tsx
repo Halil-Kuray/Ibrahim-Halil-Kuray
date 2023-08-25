@@ -31,7 +31,7 @@ export const Feature = ({
       {data.title && (
         <h3
           data-tina-field={tinaField(data, "title")}
-          className="text-2xl font-semibold title-font"
+          className="text-lg font-semibold title-font"
         >
           {data.title}
         </h3>
@@ -51,17 +51,20 @@ export const Feature = ({
 export const Features = ({ data }: { data: PageBlocksFeatures }) => {
   return (
     <Section color={data.color}>
-      <Container
-        className={`flex flex-wrap gap-x-10 gap-y-8 text-left`}
-        size="large"
-      >
+      <Container size="large">
         {data.title && (
-          <h3>{data.title}</h3>
+          <h3 data-tina-field={tinaField(data, "title")}
+            className="relative block py-1 mb-8 text-xl font-bold tracking-wide title-font z-20"
+          >{data.title}</h3>
         )}
-        {data.items &&
-          data.items.map(function (block, i) {
-            return <Feature featuresColor={data.color} key={i} data={block} />;
-          })}
+
+        <Section className={`flex flex-wrap gap-x-10 gap-y-8 text-left`}>
+          {data.items &&
+            data.items.map(function (block, i) {
+              return <Feature featuresColor={data.color} key={i} data={block} />;
+            })}
+        </Section>
+
       </Container>
     </Section>
   );
@@ -69,7 +72,7 @@ export const Features = ({ data }: { data: PageBlocksFeatures }) => {
 
 const defaultFeature = {
   title: "Here's Another Feature",
-  text: "This is where you might talk about the feature, if this wasn't just filler text.",
+  text: "This is where you might talk about the feature",
   icon: {
     color: "",
     style: "float",
