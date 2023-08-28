@@ -1,5 +1,5 @@
 ---
-title: Tina Cloud Starter
+title: Home
 blocks:
   - tagline: IBRAHIM HALIL KURAY / WEB DEVELOPER
     headline: 'Beyond Code: My Digital Wonderland'
@@ -26,10 +26,13 @@ blocks:
 
       > \
 
-      >  *Mevlana Jalaluddin Rumi*
+      > *Mevlana Jalaluddin Rumi*
     color: default
     _template: content
 ---
+
+
+
 
 
 
