@@ -1,0 +1,72 @@
+---
+title: Filter & Search & Options  React JS
+summary: >
+  You can see an example of how to filter based on an option selected in an
+  search field.
+author: content/authors/napolean.md
+date: 2023-08-27T22:00:00.000Z
+category: React
+---
+
+```javascript
+import React, { useState } from 'react';
+
+export const Products = () => {
+
+  const products = [
+    { category: 'electronics', name: 'Laptop', price: 5000 },
+    { category: 'clothing', name: 'T-shirt', price: 50 },
+    { category: 'electronics', name: 'Phone', price: 2000 },
+    { category: 'food', name: 'Pizza', price: 30 },
+    { category: 'clothing', name: 'Jeans', price: 70 },
+    { category: 'food', name: 'Burger', price: 15 },
+    { category: 'electronics', name: 'Headphones', price: 100 },
+    { category: 'clothing', name: 'Dress', price: 120 },
+  ];
+
+  let renderData;
+  let categories = ["Select A Categorie"]
+
+  const [search, setSearch] = useState('Select A Categorie');
+  const handleChangeFilter = event => {
+    setFilter(event.target.value);
+  }
+
+  products.map((item) => {
+    let category = item.category
+    if (categories.indexOf(category) == -1) {
+      categories.push(category)
+    }
+  })
+
+  if (search === categories[0]) {
+    renderData = products
+  } else {
+    renderData = products.filter((item) => item.category == search)
+  }
+}
+
+return (
+  <>
+    <div>
+      <label htmlFor="filter">
+        Filter a categorie
+      </label>
+      <select value={filter} onChange={handleChangeFilter}>
+          {categories.map((categorie, index) => {
+            return (
+              <option value={categorie} key={index} >{categorie}</option>
+            )
+          })}
+      </select>
+    </div>
+
+    <ul>
+      {renderData.map((item) => {
+        <li> {item.name} </li>
+      })}
+    </ul>
+
+  </>
+)
+```
