@@ -234,18 +234,13 @@ const config = defineConfig({
                 fields: [
                   {
                     type: "string",
-                    label: "Facebook",
-                    name: "facebook",
+                    label: "Email",
+                    name: "email",
                   },
                   {
                     type: "string",
-                    label: "Twitter",
-                    name: "twitter",
-                  },
-                  {
-                    type: "string",
-                    label: "Instagram",
-                    name: "instagram",
+                    label: "linkedin",
+                    name: "Linkedin",
                   },
                   {
                     type: "string",
