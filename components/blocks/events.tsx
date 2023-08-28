@@ -104,7 +104,7 @@ export const eventBlockSchema: Template = {
         name: 'items',
         list: true,
         ui: {
-          itemProps: (item: any) => {
+          itemProps: (item) => {
             return {
               label: item?.title,
             };
