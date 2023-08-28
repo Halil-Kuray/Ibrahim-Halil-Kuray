@@ -18,7 +18,8 @@ export const Layout = ({
   return (
     <>
       <Head>
-        <title>Tina</title>
+        <title>Ibrahim-Halil-Kuray</title>
+        <link rel="icon" type="image/x-icon" href="blocks/icon2.png"></link>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         {data.theme.font === "nunito" && (
           <>
