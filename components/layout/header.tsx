@@ -87,6 +87,7 @@ export const Header = ({ data }: { data: GlobalHeader }) => {
                   style: data.icon.style,
                 }}
               />
+              <img src="blocks/kurayLogo.png" alt="logo" className="my-logo rounded-lg" />
               <span data-tina-field={tinaField(data, "name")}>{data.name}</span>
             </Link>
           </h4>
@@ -125,7 +126,7 @@ export const Header = ({ data }: { data: GlobalHeader }) => {
                     <Link
                       data-tina-field={tinaField(item, "label")}
                       href={`/${item.href}`}
-                      className={`relative select-none	text-base inline-block tracking-wide transition duration-150 ease-out hover:opacity-100 py-8 px-4 ${
+                      className={`relative select-none	text-lg inline-block tracking-wide transition duration-150 ease-out hover:opacity-100 py-2 px-1 ${
                         activeItem ? `` : `opacity-70`
                       }`}
                       onClick={handleMenuItemClick}
