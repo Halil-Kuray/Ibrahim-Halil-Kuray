@@ -18,7 +18,7 @@ export const Feature = ({
   return (
     <div
       data-tina-field={tinaField(data)}
-      className="flex-1 flex flex-col gap-6 text-center items-center lg:items-start lg:text-left max-w-xl mx-auto"
+      className="flex-1 flex flex-col gap-2 text-center items-center lg:items-start lg:text-left max-w-xl mx-auto"
       style={{ flexBasis: "16rem" }}
     >
       {data.icon && (
@@ -51,7 +51,7 @@ export const Feature = ({
 export const Features = ({ data }: { data: PageBlocksFeatures }) => {
   return (
     <Section color={data.color}>
-      <Container size="large">
+      <Container size="small" width="medium">
         {data.title && (
           <h3 data-tina-field={tinaField(data, "title")}
             className="relative block py-1 mb-8 text-xl font-bold tracking-wide title-font z-20"
