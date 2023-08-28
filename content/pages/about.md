@@ -3,10 +3,6 @@ title: About
 blocks:
   - headline: ''
     actions:
-      - label: Ornek
-        type: button
-        icon: false
-        link: '#ornek'
       - label: About Me
         type: button
         icon: false
@@ -14,21 +10,21 @@ blocks:
       - label: IT Skills
         type: button
         icon: false
-        link: about#it-skills
+        link: '#it-skills'
       - label: Work Experience
         type: button
         icon: false
-        link: about#work-experience
+        link: '#work-experience'
       - label: Education
         type: button
         icon: false
-        link: about#education
+        link: '#education'
       - label: Certificates
         type: button
         icon: false
         link: '#certificates'
     _template: nav
-  - id: '#about-me'
+  - id: about-me
     body: >
       # IBRAHIM HALIL KURAY / Web Developer
 
@@ -232,7 +228,7 @@ blocks:
   - id: education
     body: "## Education\n\n* 03/2022 - 12/2022\n\n  **Powercoders Coding Academy For Refugees, Bern, SWITZERLAND**\n\n  \\- Foundations in HTML, CSS, JavaScript.\\\n  \\- Web-Dev Focus Track (react.js, python, typescript).\\\n  \\- Weekly business & social skills training\\\n  (Agile experience, building community & prejudice reduction, mental health, presentations and team work, Swiss work culture, transcultural\_ skills and self-confidence, web accessibility).\n* 08/2021 - 05/2022\n\n  [Hicoders IT Verein,](https://hicoders.ch/en/) **Zurich, SWITZERLAND**\n\n  \\- Full-stack development course\n* 09/2016 - 06/2018\\\n  **Gazi Universit, Ankara, TURKEY**\\\n  Advanced Studies Faculty of Law\n* 09/2012 - 06/2016\\\n  **Inonu University, Malatya, TURKEY**\\\n  Bachelor, Political Science and Public Management\n"
     _template: content
-  - id: '#certificates'
+  - id: certificates
     body: |
       ## Certificates
 
@@ -263,6 +259,12 @@ blocks:
     color: primary
     _template: content
 ---
+
+
+
+
+
+
 
 
 

@@ -9,12 +9,15 @@ import { tinaField } from "tinacms/dist/react";
 export const Content = ({ data }: { data: PageBlocksContent }) => {
   return (
     <Section color={data.color}>
+      {data.id && (
+        <a data-tina-field={tinaField(data, "id")} id={data.id}></a>
+      )} 
       <Container
         className={`prose prose-lg ${
           data.color === "primary" ? `prose-primary` : `dark:prose-dark`
         }`}
         data-tina-field={tinaField(data, "body")}
-        size="large"
+        size="medium"
         width="medium"
       >
         <TinaMarkdown content={data.body} />
@@ -33,6 +36,11 @@ export const contentBlockSchema: Template = {
     },
   },
   fields: [
+    {
+      type:'string',
+      name:'id',
+      label:'Id',
+    },
     {
       type: "rich-text",
       label: "Body",
