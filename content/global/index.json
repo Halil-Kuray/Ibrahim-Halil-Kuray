@@ -1,15 +1,14 @@
 {
   "header": {
     "icon": {
-      "name": "Tina",
       "color": "orange",
       "style": "float"
     },
     "name": "Home",
-    "color": "default",
+    "color": "primary",
     "nav": [
       {
-        "href": "home",
+        "href": "activities",
         "label": "Activities"
       },
       {
@@ -25,15 +24,14 @@
   "footer": {
     "color": "default",
     "social": {
-      "facebook": "/",
-      "twitter": "/",
-      "instagram": "/",
+      "email": "mailto:ibrahim.kuray@powercoders.org",
+      "Linkedin": "https://www.linkedin.com/in/ibrahim-halil-kuray",
       "github": "https://github.com/Ibrahim-Halil-Kuray"
     }
   },
   "theme": {
-    "color": "green",
+    "color": "blue",
     "font": "sans",
-    "darkMode": "light"
+    "darkMode": "dark"
   }
 }
