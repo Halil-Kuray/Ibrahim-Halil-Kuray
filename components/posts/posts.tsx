@@ -19,8 +19,8 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
     orange: "group-hover:text-orange-600 dark:group-hover:text-orange-300",
     yellow: "group-hover:text-yellow-500 dark:group-hover:text-yellow-300",
   };
-  // @ts-ignore
-  let categories =  ["Select A Categorie"]
+
+  const [categories, setCategories] = useState(["Select A Categorie"])
   let renderData = [];
 
   const [filter, setFilter] = useState('Select A Categorie');
@@ -29,12 +29,10 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
     setFilter(event.target.value);
   }
 
-
-
   data.map((postData)=> {
     const item =postData.node.category
     if(categories.indexOf(item) == -1){
-      categories.push(postData.node.category)
+      setCategories( categories => [...categories, item])
     }
   })
 
@@ -115,9 +113,7 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
           </Link>
         );
         })}
-      </Section>
-
-      
+      </Section>      
     </>
   );
 };
