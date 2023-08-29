@@ -252,13 +252,14 @@ blocks:
         Git/Github, CLI, HTML5, CSS3, JS, React.js Node.js
       * 08/2020 - 12/2022\
         **University of Michigan**\
-        -Introduction to HTML5\
-        -Introduction to CSS3\
-        -Advanced Styling with Responsive Design\
-        -Interactivity with JavaScript\\
+        [-Introduction to HTML5](https://www.coursera.org/account/accomplishments/verify/M6CL63AWLNKP)\
+        [-Introduction to CSS3](https://www.coursera.org/account/accomplishments/verify/99SWPGKJA8PM)\
+        [-Advanced Styling with Responsive Design](https://www.coursera.org/account/accomplishments/verify/HV2UPBG8LRM5)\
+        [-Interactivity with JavaScript](https://www.coursera.org/account/accomplishments/verify/Z9ZUPURVCH6U)
     color: primary
     _template: content
 ---
+
 
 
 
