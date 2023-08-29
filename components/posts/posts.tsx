@@ -19,7 +19,7 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
     orange: "group-hover:text-orange-600 dark:group-hover:text-orange-300",
     yellow: "group-hover:text-yellow-500 dark:group-hover:text-yellow-300",
   };
-
+  // @ts-ignore
   let categories =  ["Select A Categorie"]
   let renderData = [];
 
