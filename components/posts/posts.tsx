@@ -32,7 +32,7 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
 
 
   data.map((postData)=> {
-    let item =postData.node.category
+    const item =postData.node.category
     if(categories.indexOf(item) == -1){
       categories.push(postData.node.category)
     }
