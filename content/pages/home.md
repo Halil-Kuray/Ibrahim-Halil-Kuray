@@ -1,18 +1,6 @@
 ---
 title: Home
 blocks:
-  - tagline: Ibrahim Halil Kuray
-    headline: Web Developer
-    text: >
-      I am a disciplined and hardworking developer with a passion for learning
-      new things. I am highly adaptable to new situations and thrive in
-      environments where I can work collaboratively with others. With a
-      background in political science and public management, I have a unique
-      perspective on the role of technology in society and am able to analyze
-      its impact with a critical eye. I work effectively in teams, bringing my
-      adaptability and communication skills to collaborate and deliver
-      successful projects.
-    _template: hero
   - headline: ''
     actions:
       - label: About Me
@@ -36,6 +24,18 @@ blocks:
         icon: false
         link: '#certificates'
     _template: nav
+  - tagline: Ibrahim Halil Kuray
+    headline: Web Developer
+    text: >
+      I am a disciplined and hardworking developer with a passion for learning
+      new things. I am highly adaptable to new situations and thrive in
+      environments where I can work collaboratively with others. With a
+      background in political science and public management, I have a unique
+      perspective on the role of technology in society and am able to analyze
+      its impact with a critical eye. I work effectively in teams, bringing my
+      adaptability and communication skills to collaborate and deliver
+      successful projects.
+    _template: hero
   - id: about-me
     body: >
       # IBRAHIM HALIL KURAY / Web Developer
@@ -271,6 +271,7 @@ blocks:
     color: primary
     _template: content
 ---
+
 
 
 
