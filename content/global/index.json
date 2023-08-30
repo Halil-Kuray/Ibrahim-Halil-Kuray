@@ -5,7 +5,7 @@
       "style": "float"
     },
     "name": "Home",
-    "color": "primary",
+    "color": "default",
     "nav": [
       {
         "href": "activities",
