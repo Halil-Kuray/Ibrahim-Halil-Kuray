@@ -181,6 +181,7 @@ blocks:
           style: float
         title: Hackathons
         text: ''
+    color: tint
     _template: features
   - title: New Learning
     items:
@@ -256,6 +257,7 @@ blocks:
     color: primary
     _template: content
 ---
+
 
 
 
