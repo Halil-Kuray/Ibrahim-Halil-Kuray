@@ -25,8 +25,11 @@ blocks:
         link: '#certificates'
     _template: nav
   - tagline: Ibrahim Halil Kuray
-    headline: Web Developer
+    headline: ''
     text: >
+      ## Web Developer
+
+
       I am a disciplined and hardworking developer with a passion for learning
       new things. I am highly adaptable to new situations and thrive in
       environments where I can work collaboratively with others. With a
@@ -272,6 +275,7 @@ blocks:
     color: primary
     _template: content
 ---
+
 
 
 
