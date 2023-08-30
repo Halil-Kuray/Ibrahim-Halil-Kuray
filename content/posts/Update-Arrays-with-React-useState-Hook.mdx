@@ -1,0 +1,21 @@
+---
+title: Update Arrays with React useState Hook
+summary: >
+  It is easily possible to update an array with the push method. Here we will
+  add new values to an array using the spread operator and react useState.
+author: content/authors/napolean.md
+date: 2023-08-30T22:00:00.000Z
+category: React
+---
+
+```javascript
+import React, { useState } from 'react';
+
+// an array. We will this array items to another array.
+const items = ['apple', 'aggplant', 'banana', "strawberry"]
+
+const [myArray, setMyArray] = useState([])
+
+items.map((item) => setMyArray(oldArray => [...oldArray, item]))
+
+```
