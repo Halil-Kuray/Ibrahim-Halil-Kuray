@@ -35,6 +35,7 @@ blocks:
       its impact with a critical eye. I work effectively in teams, bringing my
       adaptability and communication skills to collaborate and deliver
       successful projects.
+    color: default
     _template: hero
   - id: about-me
     body: >
@@ -271,6 +272,7 @@ blocks:
     color: primary
     _template: content
 ---
+
 
 
 
