@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Home 2
 blocks:
   - tagline: IBRAHIM HALIL KURAY / WEB DEVELOPER
     headline: 'Beyond Code: My Digital Wonderland'
@@ -30,6 +30,7 @@ blocks:
     color: default
     _template: content
 ---
+
 
 
 
