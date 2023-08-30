@@ -1,6 +1,10 @@
 ---
 title: Home
 blocks:
+  - tagline: Ibrahim Halil Kuray
+    headline: Web Developer
+    text: ''
+    _template: hero
   - headline: ''
     actions:
       - label: About Me
@@ -259,6 +263,7 @@ blocks:
     color: primary
     _template: content
 ---
+
 
 
 
