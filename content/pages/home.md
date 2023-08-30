@@ -114,7 +114,7 @@ blocks:
           style: float
         title: Redux JS
         text: ''
-    color: primary
+    color: tint
     _template: features
   - title: Backend
     items:
@@ -256,6 +256,7 @@ blocks:
     color: primary
     _template: content
 ---
+
 
 
 
