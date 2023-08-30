@@ -3,10 +3,6 @@ title: Home
 blocks:
   - headline: ''
     actions:
-      - label: About Me
-        type: button
-        icon: false
-        link: '#about-me'
       - label: IT Skills
         type: button
         icon: false
@@ -260,6 +256,7 @@ blocks:
     color: primary
     _template: content
 ---
+
 
 
 
