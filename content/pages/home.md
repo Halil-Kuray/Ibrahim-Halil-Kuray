@@ -215,8 +215,8 @@ blocks:
           name: ''
           color: ''
           style: float
-        title: Here's Another Feature
-        text: This is where you might talk about the feature
+        title: GO
+        text: ''
       - icon:
           name: ''
           color: ''
@@ -289,6 +289,7 @@ blocks:
     color: primary
     _template: content
 ---
+
 
 
 
