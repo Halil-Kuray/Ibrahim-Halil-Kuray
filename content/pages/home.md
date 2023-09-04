@@ -195,13 +195,13 @@ blocks:
           name: ''
           color: ''
           style: float
-        title: Here's Another Feature
+        title: Solidity
         text: ''
       - icon:
           name: ''
           color: ''
           style: float
-        title: Here's Another Feature
+        title: Docker
         text: ''
     _template: features
   - id: work-experience
@@ -257,6 +257,7 @@ blocks:
     color: primary
     _template: content
 ---
+
 
 
 
