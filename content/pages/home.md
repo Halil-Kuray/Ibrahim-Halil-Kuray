@@ -189,6 +189,38 @@ blocks:
           name: ''
           color: ''
           style: float
+        title: Here's Another Feature
+        text: This is where you might talk about the feature
+      - icon:
+          name: ''
+          color: ''
+          style: float
+        title: Here's Another Feature
+        text: This is where you might talk about the feature
+      - icon:
+          name: ''
+          color: ''
+          style: float
+        title: Here's Another Feature
+        text: This is where you might talk about the feature
+      - icon:
+          name: ''
+          color: ''
+          style: float
+        title: CMS
+        text: >-
+          Web site development using Static-site techniques powered by React,
+          Tailwind and Tina CM
+      - icon:
+          name: ''
+          color: ''
+          style: float
+        title: Here's Another Feature
+        text: This is where you might talk about the feature
+      - icon:
+          name: ''
+          color: ''
+          style: float
         title: Python
         text: ''
       - icon:
@@ -257,6 +289,7 @@ blocks:
     color: primary
     _template: content
 ---
+
 
 
 
