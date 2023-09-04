@@ -34,6 +34,8 @@ blocks:
       its impact with a critical eye. I work effectively in teams, bringing my
       adaptability and communication skills to collaborate and deliver
       successful projects.
+    image:
+      src: /uploads/Ibrahim_Halil_Kuray.jpg
     color: default
     _template: hero
   - id: it-skills
@@ -271,6 +273,7 @@ blocks:
     color: primary
     _template: content
 ---
+
 
 
 
