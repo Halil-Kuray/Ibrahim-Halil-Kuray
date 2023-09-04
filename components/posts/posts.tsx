@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from "next/link";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { BsArrowRight } from "react-icons/bs";
@@ -21,20 +21,24 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
   };
 
   const [categories, setCategories] = useState(["Select A Categorie"])
-  let renderData = [];
-
   const [filter, setFilter] = useState('Select A Categorie');
 
   const handleChangeFilter = event => {
     setFilter(event.target.value);
   }
 
-  data.map((postData)=> {
-    const item =postData.node.category
-    if(categories.indexOf(item) == -1){
-      setCategories( categories => [...categories, item])
-    }
-  })
+  let renderData = [];
+  
+  useEffect(() => {
+    const initialCategories = ["Select A Categorie"];
+    data.map((postData) => {
+      const item = postData.node.category;
+      if (initialCategories.indexOf(item) === -1) {
+        initialCategories.push(item);
+      }
+    });
+    setCategories(initialCategories);
+  }, []);
 
   if(filter == categories[0]){
     renderData = data
