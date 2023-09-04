@@ -8,10 +8,6 @@
     "color": "default",
     "nav": [
       {
-        "href": "activities",
-        "label": ""
-      },
-      {
         "href": "posts",
         "label": "Blog"
       }
