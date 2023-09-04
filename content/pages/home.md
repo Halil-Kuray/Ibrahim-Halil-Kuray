@@ -271,9 +271,10 @@ blocks:
         [-Introduction to CSS3](https://www.coursera.org/account/accomplishments/verify/99SWPGKJA8PM)\
         [-Advanced Styling with Responsive Design](https://www.coursera.org/account/accomplishments/verify/HV2UPBG8LRM5)\
         [-Interactivity with JavaScript](https://www.coursera.org/account/accomplishments/verify/Z9ZUPURVCH6U)
-    color: primary
+    color: tint
     _template: content
 ---
+
 
 
 
