@@ -195,7 +195,7 @@ blocks:
         title: CMS
         text: >-
           Web site development using Static-site techniques powered by React,
-          Tailwind and Tina CM
+          Tailwind and Tina CMS
       - icon:
           name: ''
           color: ''
@@ -274,6 +274,7 @@ blocks:
     color: tint
     _template: content
 ---
+
 
 
 
