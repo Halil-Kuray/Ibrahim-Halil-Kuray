@@ -36,7 +36,7 @@ blocks:
       successful projects.
     image:
       src: /uploads/Ibrahim_Halil_Kuray.jpg
-      alt: My profile photo
+      alt: Ibrahim Halil Kuray profile photo
     color: default
     _template: hero
   - id: it-skills
@@ -274,6 +274,7 @@ blocks:
     color: primary
     _template: content
 ---
+
 
 
 
