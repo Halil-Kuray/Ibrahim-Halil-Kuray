@@ -33,6 +33,9 @@ export const Feature = ({
       )}
       {data.text && (
         <div
+        className={`prose prose-md ${
+          featuresColor === "primary" ? `prose-primary` : `dark:prose-dark`
+        }`}
           data-tina-field={tinaField(data, "text")}
         >
           <TinaMarkdown content={data.text} />
