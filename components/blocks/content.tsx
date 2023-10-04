@@ -17,7 +17,7 @@ export const Content = ({ data }: { data: PageBlocksContent }) => {
           data.color === "primary" ? `prose-primary` : `dark:prose-dark`
         }`}
         data-tina-field={tinaField(data, "body")}
-        size="medium"
+        size="small"
         width="medium"
       >
         <TinaMarkdown content={data.body} />
