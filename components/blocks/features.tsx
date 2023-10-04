@@ -1,8 +1,8 @@
 import { Section } from "../util/section";
 import { Container } from "../util/container";
 import { Icon } from "../util/icon";
-import { iconSchema } from "../util/icon";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
+import type { Template } from "tinacms";
 import {
   PageBlocksFeatures,
   PageBlocksFeaturesItems,
@@ -19,16 +19,9 @@ export const Feature = ({
   return (
     <div
       data-tina-field={tinaField(data)}
-      className="flex flex-col gap-2 text-center items-center lg:items-start lg:text-left max-w-xl mx-auto  bg-blue-200"
+      className="flex flex-col gap-2 text-center items-center lg:items-start lg:text-left max-w-xl mx-auto  bg-blue-100"
       style={{ flexBasis: "12rem" }}
     >
-      {data.icon && (
-        <Icon
-          tinaField={tinaField(data, "icon")}
-          parentColor={featuresColor}
-          data={{ size: "large", ...data.icon }}
-        />
-      )}
       {data.title && (
         <h3
           data-tina-field={tinaField(data, "title")}
@@ -80,14 +73,9 @@ export const Features = ({ data }: { data: PageBlocksFeatures }) => {
 const defaultFeature = {
   title: "Here's Another Feature",
   text: "This is where you might talk about the feature",
-  icon: {
-    color: "",
-    style: "float",
-    name: "",
-  },
 };
 
-export const featureBlockSchema = {
+export const featureBlockSchema: Template = {
   name: "features",
   label: "Features",
   ui: {
@@ -123,7 +111,6 @@ export const featureBlockSchema = {
         },
       },
       fields: [
-        iconSchema,
         {
           type: "string",
           label: "Title",
