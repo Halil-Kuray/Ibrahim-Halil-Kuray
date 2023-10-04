@@ -190,6 +190,9 @@ blocks:
     color: tint
     _template: features
   - title: New Learning and Interests
+    description: >-
+      This section encompasses areas of interest and skills that I am either
+      currently learning or eager to explore further.
     items:
       - title: Go
         text: >
@@ -208,6 +211,12 @@ blocks:
           virtualization to deliver software in packages called containers.
     _template: features
   - title: Familiar With
+    description: >-
+      In this section, I have hands-on experience with some of the listed skills
+      through my participation in hackathons, while others I have explored at a
+      superficial level to gain a basic understanding as part of various
+      projects I have worked on. I possess a foundational knowledge in these
+      skills.
     items:
       - title: CircuitPython
         text: >
