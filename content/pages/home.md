@@ -23,7 +23,7 @@ blocks:
   - tagline: Ibrahim Halil Kuray
     headline: ''
     text: >
-      ## Web Developer
+      ## Sofware Developer
 
 
       I am a disciplined and hardworking developer with a passion for learning
@@ -43,7 +43,7 @@ blocks:
     body: |
       ## IT Skills
     _template: content
-  - title: Frontend
+  - title: Frontend && Design
     items:
       - icon:
           name: ''
@@ -79,12 +79,6 @@ blocks:
           name: ''
           color: ''
           style: float
-        title: Figma
-        text: ''
-      - icon:
-          name: ''
-          color: ''
-          style: float
         title: JavaScript
         text: ''
       - icon:
@@ -103,12 +97,6 @@ blocks:
           name: ''
           color: ''
           style: float
-        title: JSX
-        text: ''
-      - icon:
-          name: ''
-          color: ''
-          style: float
         title: React JS
         text: ''
       - icon:
@@ -116,6 +104,30 @@ blocks:
           color: ''
           style: float
         title: Redux JS
+        text: ''
+      - icon:
+          name: ''
+          color: ''
+          style: float
+        title: JSX
+        text: ''
+      - icon:
+          name: ''
+          color: ''
+          style: float
+        title: Python
+        text: ''
+      - icon:
+          name: ''
+          color: ''
+          style: float
+        title: Canva
+        text: ''
+      - icon:
+          name: ''
+          color: ''
+          style: float
+        title: Figma
         text: ''
     color: tint
     _template: features
@@ -186,27 +198,13 @@ blocks:
         text: ''
     color: tint
     _template: features
-  - title: New Learning
+  - title: New Learning and Interests
     items:
       - icon:
           name: ''
           color: ''
           style: float
-        title: CMS
-        text: >-
-          Web site development using Static-site techniques powered by React,
-          Tailwind and Tina CMS
-      - icon:
-          name: ''
-          color: ''
-          style: float
         title: GO
-        text: ''
-      - icon:
-          name: ''
-          color: ''
-          style: float
-        title: Python
         text: ''
       - icon:
           name: ''
@@ -219,6 +217,55 @@ blocks:
           color: ''
           style: float
         title: Docker
+        text: ''
+    _template: features
+  - title: Familiar With
+    items:
+      - icon:
+          name: ''
+          color: ''
+          style: float
+        title: CircuitPython
+        text: ''
+      - icon:
+          name: ''
+          color: ''
+          style: float
+        title: Vue.js
+        text: ''
+      - icon:
+          name: ''
+          color: ''
+          style: float
+        title: Go
+        text: ''
+      - icon:
+          name: ''
+          color: ''
+          style: float
+        title: Flutter
+        text: ''
+    color: tint
+    _template: features
+  - title: Others
+    items:
+      - icon:
+          name: ''
+          color: ''
+          style: float
+        title: Docsify
+        text: ''
+      - icon:
+          name: ''
+          color: ''
+          style: float
+        title: Word Press
+        text: ''
+      - icon:
+          name: ''
+          color: ''
+          style: float
+        title: Tina CMS
         text: ''
     _template: features
   - id: work-experience
@@ -274,6 +321,25 @@ blocks:
     color: tint
     _template: content
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
