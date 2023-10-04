@@ -47,59 +47,104 @@ blocks:
     items:
       - title: HTML5
         text: >
-          [HTML5](https://en.wikipedia.org/wiki/HTML5) is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and final major HTML version that is a World Wide Web Consortium recommendation. 
+          [HTML5](https://en.wikipedia.org/wiki/HTML5) is a markup language used
+          for structuring and presenting content on the World Wide Web. It is
+          the fifth and final major HTML version that is a World Wide Web
+          Consortium recommendation.
       - title: CSS3
         text: >
-          [CSS3](https://en.wikipedia.org/wiki/CSS): Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML
+          [CSS3](https://en.wikipedia.org/wiki/CSS): Cascading Style Sheets is a
+          style sheet language used for describing the presentation of a
+          document written in a markup language such as HTML or XML
       - title: SASS
         text: >
-          [SASS](https://en.wikipedia.org/wiki/Sass_(style_sheet_language)) is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets. SassScript is the scripting language itself.
+          [SASS](https://en.wikipedia.org/wiki/Sass_\(style_sheet_language\)) is
+          a preprocessor scripting language that is interpreted or compiled into
+          Cascading Style Sheets. SassScript is the scripting language itself.
       - title: Bootstrap
         text: >
-          [Bootstrap](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)) is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. 
+          [Bootstrap](https://en.wikipedia.org/wiki/Bootstrap_\(front-end_framework\))
+          is a free and open-source CSS framework directed at responsive,
+          mobile-first front-end web development.
       - title: Tailwind CSS
         text: >
-          [Tailwind CSS](https://en.wikipedia.org/wiki/Tailwind_CSS) is an open source CSS framework. The main feature of this library is that, unlike other CSS frameworks like Bootstrap, it does not provide a series of predefined classes for elements such as buttons or tables.
+          [Tailwind CSS](https://en.wikipedia.org/wiki/Tailwind_CSS) is an open
+          source CSS framework. The main feature of this library is that, unlike
+          other CSS frameworks like Bootstrap, it does not provide a series of
+          predefined classes for elements such as buttons or tables.
       - title: JavaScript
         text: >
-          [Javascript](https://en.wikipedia.org/wiki/JavaScript), often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2023, 98.7% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.
+          [Javascript](https://en.wikipedia.org/wiki/JavaScript), often
+          abbreviated as JS, is a programming language that is one of the core
+          technologies of the World Wide Web, alongside HTML and CSS. As of
+          2023, 98.7% of websites use JavaScript on the client side for webpage
+          behavior, often incorporating third-party libraries.
       - title: ES6 - ES7
         text: >
-          [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) is a standard for scripting languages, including JavaScript, JScript, and ActionScript.
+          [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) is a standard
+          for scripting languages, including JavaScript, JScript, and
+          ActionScript.
       - title: React JS
         text: >
-          [React](https://en.wikipedia.org/wiki/React_(software)) is a free and open-source front-end JavaScript library for building user interfaces based on components. It is maintained by Meta (formerly Facebook) 
+          [React](https://en.wikipedia.org/wiki/React_\(software\)) is a free
+          and open-source front-end JavaScript library for building user
+          interfaces based on components. It is maintained by Meta (formerly
+          Facebook)
       - title: Redux JS
         text: >
-          [Redux]([)](https://en.wikipedia.org/wiki/Redux_(JavaScript_library)) is an open-source JavaScript library for managing and centralizing application state. It is most commonly used with libraries such as React or Angular for building user interfaces.
+          [Redux](https://en.wikipedia.org/wiki/Redux_\(JavaScript_library\)) is
+          an open-source JavaScript library for managing and centralizing
+          application state. It is most commonly used with libraries such as
+          React or Angular for building user interfaces.
       - title: JSX
         text: >
-          [JSX](https://en.wikipedia.org/wiki/JSX_(JavaScript)) (JavaScript Syntax Extension and occasionally referred as JavaScript XML) is a JavaScript extension that allows creation of DOM trees using an XML-like syntax.
+          [JSX](https://en.wikipedia.org/wiki/JSX_\(JavaScript\)) (JavaScript
+          Syntax Extension and occasionally referred as JavaScript XML) is a
+          JavaScript extension that allows creation of DOM trees using an
+          XML-like syntax.
       - title: Python
         text: >
-          [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.
+          [Python](https://en.wikipedia.org/wiki/Python_\(programming_language\))
+          is a high-level, general-purpose programming language. Its design
+          philosophy emphasizes code readability with the use of significant
+          indentation.
       - title: Canva
         text: >
-          [Canva](https://en.wikipedia.org/wiki/Canva) is a graphic design platform.
+          [Canva](https://en.wikipedia.org/wiki/Canva) is a graphic design
+          platform.
       - title: Figma
         text: >
-          [Figma](https://en.wikipedia.org/wiki/Figma_(software)) is a collaborative web application for interface design, with additional offline features enabled by desktop applications for macOS and Windows.
+          [Figma](https://en.wikipedia.org/wiki/Figma_\(software\)) is a
+          collaborative web application for interface design, with additional
+          offline features enabled by desktop applications for macOS and
+          Windows.
     color: tint
     _template: features
   - title: Backend
     items:
       - title: REST API
         text: >
-          [REST API](https://en.wikipedia.org/wiki/REST) (Representational state transfer) is a software architectural style that was created to guide the design and development of the architecture for the World Wide Web.
+          [REST API](https://en.wikipedia.org/wiki/REST) (Representational state
+          transfer) is a software architectural style that was created to guide
+          the design and development of the architecture for the World Wide Web.
       - title: Node JS
         text: >
-          [Node JS](https://en.wikipedia.org/wiki/Node.js) is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS, and more. Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript engine, and executes JavaScript code outside a web browser.
+          [Node JS](https://en.wikipedia.org/wiki/Node.js) is a cross-platform,
+          open-source server environment that can run on Windows, Linux, Unix,
+          macOS, and more. Node.js is a back-end JavaScript runtime environment,
+          runs on the V8 JavaScript engine, and executes JavaScript code outside
+          a web browser.
       - title: Express JS
         text: >
-          [Express JS](https://en.wikipedia.org/wiki/Express.js) Express.js, or simply Express, is a back end web application framework for building RESTful APIs with Node.js.
+          [Express JS](https://en.wikipedia.org/wiki/Express.js) Express.js, or
+          simply Express, is a back end web application framework for building
+          RESTful APIs with Node.js.
       - title: Mongo DB
         text: >
-          [Mongo DB](https://en.wikipedia.org/wiki/MongoDB) is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. 
+          [Mongo DB](https://en.wikipedia.org/wiki/MongoDB) is a
+          source-available cross-platform document-oriented database program.
+          Classified as a NoSQL database program, MongoDB uses JSON-like
+          documents with optional schemas.
     _template: features
   - title: Collaboration
     items:
@@ -110,66 +155,105 @@ blocks:
           Enterprise, a subsidiary of Atlassian.
       - title: Git
         text: >
-          [Git](https://en.wikipedia.org/wiki/Git) is a distributed version control system that tracks changes in any set of computer files, usually used for coordinating work among programmers who are collaboratively developing source code during software development. 
+          [Git](https://en.wikipedia.org/wiki/Git) is a distributed version
+          control system that tracks changes in any set of computer files,
+          usually used for coordinating work among programmers who are
+          collaboratively developing source code during software development.
       - title: ' GitHub'
         text: >
-          [Github](https://en.wikipedia.org/wiki/GitHub), Inc. is a platform and cloud-based service for software development and version control using Git, allowing developers to store and manage their code.
+          [Github](https://en.wikipedia.org/wiki/GitHub), Inc. is a platform and
+          cloud-based service for software development and version control using
+          Git, allowing developers to store and manage their code.
       - title: Jira
         text: >
-          [Jira](https://en.wikipedia.org/wiki/Jira_(software)) is a proprietary issue tracking product developed by Atlassian that allows bug tracking and agile project management
+          [Jira](https://en.wikipedia.org/wiki/Jira_\(software\)) is a
+          proprietary issue tracking product developed by Atlassian that allows
+          bug tracking and agile project management
       - title: Scrum
         text: >
-          [Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development)) is an agile project management system commonly used in software development and other industries.
+          [Scrum](https://en.wikipedia.org/wiki/Scrum_\(software_development\))
+          is an agile project management system commonly used in software
+          development and other industries.
       - title: Agile
         text: >
-          [Agile methodology](https://en.wikipedia.org/wiki/Agile_software_development) is a project management approach that prioritizes cross-functional collaboration and continuous improvement. It divides projects into smaller phases and guides teams through cycles of planning, execution, and evaluation.
+          [Agile
+          methodology](https://en.wikipedia.org/wiki/Agile_software_development)
+          is a project management approach that prioritizes cross-functional
+          collaboration and continuous improvement. It divides projects into
+          smaller phases and guides teams through cycles of planning, execution,
+          and evaluation.
       - title: Hackathons
         text: >
-          A [hackathons](https://en.wikipedia.org/wiki/Hackathon) is an event where people engage in rapid and collaborative engineering over a relatively short period of time such as 24 or 48 hours.
+          A [hackathons](https://en.wikipedia.org/wiki/Hackathon) is an event
+          where people engage in rapid and collaborative engineering over a
+          relatively short period of time such as 24 or 48 hours.
     color: tint
     _template: features
   - title: New Learning and Interests
     items:
       - title: Go
         text: >
-          [Go](https://en.wikipedia.org/wiki/Go_(programming_language)) is a statically typed, compiled high-level programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson.
+          [Go](https://en.wikipedia.org/wiki/Go_\(programming_language\)) is a
+          statically typed, compiled high-level programming language designed at
+          Google by Robert Griesemer, Rob Pike, and Ken Thompson.
       - title: Solidity
         text: >
-          [Solidity](https://en.wikipedia.org/wiki/Solidity) is an object-oriented programming language for implementing smart contracts on various blockchain platforms, most notably, Ethereum.
+          [Solidity](https://en.wikipedia.org/wiki/Solidity) is an
+          object-oriented programming language for implementing smart contracts
+          on various blockchain platforms, most notably, Ethereum.
       - title: Docker
         text: >
-          [Docker](https://en.wikipedia.org/wiki/Docker_(software)) is a set of platform as a service (PaaS) products that use OS-level virtualization to deliver software in packages called containers.
+          [Docker](https://en.wikipedia.org/wiki/Docker_\(software\)) is a set
+          of platform as a service (PaaS) products that use OS-level
+          virtualization to deliver software in packages called containers.
     _template: features
   - title: Familiar With
     items:
       - title: CircuitPython
         text: >
-          [CircuitPython](https://en.wikipedia.org/wiki/CircuitPython) is an open-source derivative of the MicroPython programming language targeted toward students and beginners.
+          [CircuitPython](https://en.wikipedia.org/wiki/CircuitPython) is an
+          open-source derivative of the MicroPython programming language
+          targeted toward students and beginners.
       - title: Vue.js
         text: >
-          [Vue.js](https://en.wikipedia.org/wiki/Vue.js) Vue.js is an open-source model–view–viewmodel front end JavaScript library for building user interfaces and single-page applications.
+          [Vue.js](https://en.wikipedia.org/wiki/Vue.js) Vue.js is an
+          open-source model–view–viewmodel front end JavaScript library for
+          building user interfaces and single-page applications.
       - title: Go
         text: >
-          [Go](https://en.wikipedia.org/wiki/Go_(programming_language)) is a statically typed, compiled high-level programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson.
+          [Go](https://en.wikipedia.org/wiki/Go_\(programming_language\)) is a
+          statically typed, compiled high-level programming language designed at
+          Google by Robert Griesemer, Rob Pike, and Ken Thompson.
       - title: Flutter
         text: >
-          [Flutter](https://en.wikipedia.org/wiki/Flutter_(software)) is an open-source UI software development kit created by Google. It is used to develop cross platform applications from a single codebase for any web browser,[4] Fuchsia, Android, iOS, Linux, macOS, and Windows.
+          [Flutter](https://en.wikipedia.org/wiki/Flutter_\(software\)) is an
+          open-source UI software development kit created by Google. It is used
+          to develop cross platform applications from a single codebase for any
+          web browser,\[4] Fuchsia, Android, iOS, Linux, macOS, and Windows.
       - title: Next.js
         text: >
-          [Next.js](https://en.wikipedia.org/wiki/Next.js) is an open-source web development framework created by the private company Vercel providing React-based web applications with server-side rendering and static website generation.
+          [Next.js](https://en.wikipedia.org/wiki/Next.js) is an open-source web
+          development framework created by the private company Vercel providing
+          React-based web applications with server-side rendering and static
+          website generation.
     color: tint
     _template: features
   - title: Others
     items:
       - title: Docsify
         text: >
-          [Docsify](https://docsify.js.org/#/) generates your documentation website on the fly. Unlike GitBook, it does not generate static html files. Instead, it smartly loads and parses your Markdown files and displays them as a website. 
+          [Docsify](https://docsify.js.org/#/) generates your documentation
+          website on the fly. Unlike GitBook, it does not generate static html
+          files. Instead, it smartly loads and parses your Markdown files and
+          displays them as a website.
       - title: WordPress
         text: >
-          [WordPress](https://en.wikipedia.org/wiki/WordPress) is a web content management system.
+          [WordPress](https://en.wikipedia.org/wiki/WordPress) is a web content
+          management system.
       - title: Tina CMS
         text: >
-          [Tina](https://tina.io/) is an open-source headless CMS that supports Git
+          [Tina](https://tina.io/) is an open-source headless CMS that supports
+          Git
     _template: features
   - id: work-experience
     body: |
@@ -224,6 +308,7 @@ blocks:
     color: tint
     _template: content
 ---
+
 
 
 
