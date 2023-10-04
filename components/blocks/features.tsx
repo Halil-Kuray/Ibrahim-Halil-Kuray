@@ -18,8 +18,8 @@ export const Feature = ({
   return (
     <div
       data-tina-field={tinaField(data)}
-      className="flex-1 flex flex-col gap-2 text-center items-center lg:items-start lg:text-left max-w-xl mx-auto"
-      style={{ flexBasis: "16rem" }}
+      className="flex flex-col gap-2 text-center items-center lg:items-start lg:text-left max-w-xl mx-auto"
+      style={{ flexBasis: "12rem" }}
     >
       {data.icon && (
         <Icon
