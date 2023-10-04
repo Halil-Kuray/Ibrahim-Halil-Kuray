@@ -21,6 +21,7 @@ export const Feature = ({
       data-tina-field={tinaField(data)}
       className="flex flex-col gap-2 text-center items-center lg:items-start lg:text-left max-w-xl mx-auto  bg-blue-100"
       style={{ flexBasis: "12rem" }}
+      color={featuresColor}
     >
       {data.title && (
         <h3
@@ -31,12 +32,11 @@ export const Feature = ({
         </h3>
       )}
       {data.text && (
-        <p
+        <div
           data-tina-field={tinaField(data, "text")}
-          className="text-base opacity-80 leading-relaxed"
         >
           <TinaMarkdown content={data.text} />
-        </p>
+        </div>
       )}
     </div>
   );
