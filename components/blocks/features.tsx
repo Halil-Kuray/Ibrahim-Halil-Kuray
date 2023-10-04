@@ -2,6 +2,7 @@ import { Section } from "../util/section";
 import { Container } from "../util/container";
 import { Icon } from "../util/icon";
 import { iconSchema } from "../util/icon";
+import { TinaMarkdown } from "tinacms/dist/rich-text";
 import {
   PageBlocksFeatures,
   PageBlocksFeaturesItems,
@@ -41,7 +42,7 @@ export const Feature = ({
           data-tina-field={tinaField(data, "text")}
           className="text-base opacity-80 leading-relaxed"
         >
-          {data.text}
+          <TinaMarkdown content={data.text} />
         </p>
       )}
     </div>
@@ -129,12 +130,9 @@ export const featureBlockSchema = {
           name: "title",
         },
         {
-          type: "string",
+          type: "rich-text",
           label: "Text",
           name: "text",
-          ui: {
-            component: "textarea",
-          },
         },
       ],
     },
