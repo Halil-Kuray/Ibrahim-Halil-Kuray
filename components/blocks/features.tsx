@@ -18,7 +18,7 @@ export const Feature = ({
   return (
     <div
       data-tina-field={tinaField(data)}
-      className="flex flex-col gap-2 text-center items-center lg:items-start lg:text-left max-w-xl mx-auto"
+      className="flex flex-col gap-2 text-center items-center lg:items-start lg:text-left max-w-xl mx-auto  bg-blue-200"
       style={{ flexBasis: "12rem" }}
     >
       {data.icon && (
@@ -57,7 +57,13 @@ export const Features = ({ data }: { data: PageBlocksFeatures }) => {
             className="relative block py-1 mb-8 text-xl font-bold tracking-wide title-font z-20"
           >{data.title}</h3>
         )}
-
+        {data.description && (
+          <p data-tina-field={tinaField(data, "description")}
+          className={`w-full relative	mb-8 text-xl tracking-normal leading-tight`}
+          >
+            {data.description}
+          </p>
+        )}
         <Section className={`flex flex-wrap gap-x-10 gap-y-8 text-left`}>
           {data.items &&
             data.items.map(function (block, i) {
@@ -94,6 +100,11 @@ export const featureBlockSchema = {
       type: "string",
       name: "title",
       label: "Title",
+    },
+    {
+      type: "string",
+      name: "description",
+      label: "Description",
     },
     {
       type: "object",
